@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@drawable/search"
+            android:layout_gravity="center_vertical"
+            tools:ignore="ContentDescription" />
+        />
+
+        <EditText
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="@string/search_by_name"
+            android:layout_marginHorizontal="8dp"
+            android:iconifiedByDefault="false" />
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_gravity="center_vertical"
+            tools:ignore="ContentDescription"
+            app:tint="@color/black" />
+        />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:text="@string/add"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="#673AB7"
+        android:gravity="center_vertical"
+        tools:ignore="RtlCompat" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
