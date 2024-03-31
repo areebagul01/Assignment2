@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Get String List from Shared Preferences
+        // Get Json String from Shared Preferences
         String jsonString = getString();
 
         if(jsonString != null) {
